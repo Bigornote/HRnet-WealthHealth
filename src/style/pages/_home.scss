@@ -1,0 +1,36 @@
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px);
+  gap: 50px;
+  padding: 0 10vw;
+  overflow-x: hidden;
+  background: url("/src/assets/blob.svg") no-repeat;
+  background-size: 80vh;
+  background-position: 105% 0;
+
+  .container {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 150px);
+
+    &.left {
+      align-items: baseline;
+      flex-direction: column;
+      max-width: 685px;
+    }
+
+    &.right {
+      align-items: center;
+    }
+
+    & .img {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+}
