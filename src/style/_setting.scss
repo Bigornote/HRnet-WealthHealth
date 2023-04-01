@@ -1,0 +1,13 @@
+@import "./settings";
+
+//PAGES
+@import "./pages/home";
+@import "./pages/error";
+@import "./pages/create";
+@import "./pages/list";
+
+//COMPONENTS
+@import "./components/header";
+@import "./components/footer";
+@import "./components/form";
+@import "./components/table";
