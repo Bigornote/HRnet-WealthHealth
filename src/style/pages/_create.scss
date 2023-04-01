@@ -1,0 +1,25 @@
+.create {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 50px auto;
+  background: url("/src/assets/blob.svg") no-repeat;
+  background-size: auto;
+  background-position: bottom;
+
+  .img-wrapper {
+    width: 80%;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+  }
+}
