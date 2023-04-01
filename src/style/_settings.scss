@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Monument Extended";
+  src: url("../fonts/MonumentExtended-Bold.woff2") format("woff2"),
+    url("../fonts/MonumentExtended-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("../fonts/MonumentExtended-Regular.woff2") format("woff2"),
+    url("../fonts/MonumentExtended-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
+    url("../fonts/SpaceGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+$color-primary: #0f0f0f;
+$color-secondary: #a8dd35;
+$color-tertiary: #1c1c1c;
+$black: #000000;
+$white: #fff;
+$cancel: #c53548;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  overflow-x: hidden;
+  color: $color-tertiary;
+  font-size: 20px;
+}

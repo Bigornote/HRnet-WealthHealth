@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  .line {
+    background-color: $black;
+    height: 2px;
+    width: 100%;
+  }
+
+  .logo-footer {
+    width: 60px;
+    margin: auto;
+    padding: 10px 0;
+  }
+}

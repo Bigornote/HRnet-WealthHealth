@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  background-color: $black;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+  .logo-container a {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+  }
+
+  .nav-container {
+    display: flex;
+    gap: 5vw;
+
+    .nav-link:hover {
+      color: $color-secondary;
+    }
+  }
+}
