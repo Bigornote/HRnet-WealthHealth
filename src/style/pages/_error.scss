@@ -1,11 +1,10 @@
 .error {
-  overflow-x: hidden;
   position: relative;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 150px);
   text-align: center;
   padding: 0 10vw;
 
@@ -18,5 +17,11 @@
   .title-error {
     font-size: 3rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .error {
+    height: calc(100vh - 150px);
   }
 }
