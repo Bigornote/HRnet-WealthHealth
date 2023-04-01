@@ -101,11 +101,20 @@ li {
 }
 
 .h1 {
-  font-size: 2.4rem;
-  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.text-error {
+  color: $cancel;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-transform: initial;
 }
 
+//Button
 .btn-primary {
+  display: inline-block;
+  position: relative;
   background: none;
   border: 2px solid $color-tertiary;
   border-radius: 20px;
@@ -113,11 +122,44 @@ li {
   padding: 20px 25px;
   font-size: 1rem;
   margin: 1.9rem 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.btn-primary:hover:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: $color-tertiary;
+  opacity: 0;
+  border-radius: 20px;
+  animation: pulse 0.8s ease-out both;
+  z-index: -1;
+}
+.btn-primary:hover a {
+  color: $white;
+  transition: 0.8s ease-out;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 120%;
+    height: 120%;
+  }
 }
 
-.text-error {
-  color: $cancel;
-  font-size: 0.8rem;
-  margin-top: 5px;
-  text-transform: initial;
+@media screen and (min-width: 960px) {
+  .h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
 }

@@ -1,36 +1,55 @@
 .hero {
+  height: 100vh;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 150px);
-  gap: 50px;
-  padding: 0 10vw;
-  overflow-x: hidden;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: baseline;
+  gap: 20px;
+  padding: 0 2vw;
   background: url("/src/assets/blob.svg") no-repeat;
-  background-size: 80vh;
-  background-position: 105% 0;
+  background-size: auto;
+  background-position: top;
 
   .container {
     position: relative;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    height: calc(100vh - 150px);
 
     &.left {
-      align-items: baseline;
       flex-direction: column;
-      max-width: 685px;
-    }
-
-    &.right {
-      align-items: center;
+      align-items: baseline;
+      max-width: 650px;
+      margin: auto;
     }
 
     & .img {
       max-width: 500px;
       width: 100%;
     }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero {
+    background-size: 650px;
+    background-position: top center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    height: calc(100vh - 150px);
+    background-position: 110% 0;
+    padding: 0 10vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-size: 40%;
+    background-position: 90% 0;
   }
 }

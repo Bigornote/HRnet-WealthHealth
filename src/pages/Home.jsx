@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <main className="hero">
       <div className="container left">
-        <h1 className="title">Welcome to the WealthHealth HRnet.</h1>
+        <h1 className="h1">Welcome to the WealthHealth HRnet.</h1>
         <p className="content">
           Our internal web application manages the files of our employees. Here
           you can add a new employee. As well as looking at the list of
