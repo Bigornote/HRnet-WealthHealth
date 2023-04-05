@@ -18,12 +18,12 @@ const formSchema = yup.object().shape({
     .min(2, "Last Name must be at least 2 characters long.")
     .required("Last Name is required."),
   dateOfBirth: yup.string().required("Date Of Birth is required"),
-  startDate: yup.string().required("start Date is required"),
+  startDate: yup.string().required("Start Date is required"),
   street: yup.string().required("Street is required"),
   city: yup.string().required("City is required"),
   zipCode: yup
     .number()
-    .typeError("Zip code must be a number")
+    .typeError("Zip Code is Required")
     .positive("Zip code must be a positive number")
     .integer("Zip code must be an integer")
     .test("required", "Zip code is required", function (value) {
