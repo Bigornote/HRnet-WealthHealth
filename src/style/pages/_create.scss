@@ -2,12 +2,15 @@
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
   background: url("/src/assets/blob.svg") no-repeat;
   background-size: auto;
   background-position: bottom;
 
   .img-wrapper {
+    max-width: 350px;
     width: 80%;
     position: relative;
     img {
@@ -15,10 +18,53 @@
     }
   }
 
-  .form-container {
+  .form-wrapper {
+    max-width: 650px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin: auto;
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .create {
+    background-size: 80%;
+    background-position: 50% 110%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .create {
+    background-size: 65%;
+    background-position: 50% 115%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .create {
+    flex-direction: row;
+    background-size: 70%;
+    background-position: -120% center;
+
+    .img-wrapper {
+      width: 300px;
+      position: absolute;
+      left: 2vw;
+      top: 50%;
+      transform: translate(-10%, -50%);
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .create {
+    flex-direction: row;
+    background-size: 50%;
+    background-position: -50% center;
+
+    .img-wrapper {
+      width: 350px;
+      transform: translate(0%, -50%);
+    }
   }
 }

@@ -83,6 +83,7 @@ select {
   border-width: 0 0 2px;
   border-color: $color-primary;
   font-size: 0.8rem;
+  background: none;
 }
 input:focus,
 select:focus {
@@ -119,7 +120,7 @@ li {
 .btn-primary {
   display: inline-block;
   position: relative;
-  background: none;
+  background: $white;
   border: 2px solid $color-tertiary;
   border-radius: 20px;
   color: $color-tertiary;
@@ -128,6 +129,9 @@ li {
   margin: 1.9rem 0;
   overflow: hidden;
   transition: 0.5s ease-in-out;
+}
+.btn-primary:hover {
+  background: none;
 }
 .btn-primary:hover:before {
   content: "";

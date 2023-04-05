@@ -12,10 +12,7 @@ const employeeSlice = createSlice({
       // state = l'état actuel de notre slice
       // action = l'élément qui va être dispatcher
       // Payload = la valeur envoyé par l'action pour mettre à jour la propriété employees
-      state = {
-        ...state,
-        employees: payload,
-      };
+      state.employees = payload;
     },
   },
 });
