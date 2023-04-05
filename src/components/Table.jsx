@@ -23,16 +23,20 @@ const Table = () => {
     { field: "zipCode", headerName: "Zip Code", flex: 1 },
   ];
 
+  const data = {
+    rows: row,
+    columns: columns,
+    pagination: true,
+    pageSizeOptions: [5, 10, 25],
+    initialState: {
+      pagination: { paginationModel: { pageSize: 5 } },
+    },
+  };
+
   return (
-    <DataGrid
-      rows={row}
-      columns={columns}
-      autoHeight
-      hideFooterRowCount
-      responsive
-      pageSize={5}
-      rowsPerPageOptions={[10, 25, 50, 100]}
-    />
+    <div style={{ height: 371, width: "100%" }}>
+      <DataGrid {...data} />
+    </div>
   );
 };
 
