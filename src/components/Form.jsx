@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import formSchema from "../schema/formSchema";
 import { createEmployee } from "../feature/employee.slice";
 import { states } from "../services/states";
@@ -9,8 +9,9 @@ import { departments } from "../services/departments";
 
 const Form = () => {
   const dispatch = useDispatch();
-  // Lorsque que le composant modal sera importé
-  // const [displayModal, setDisplayModal] = useState(false);
+  const employee = useSelector((state) => state.employee.employees);
+
+  let generateIdUser = employee.length + 1;
 
   // React Hook Form config
   const {
@@ -26,10 +27,17 @@ const Form = () => {
 
   // Fonction HandleSubmit()
   const SubmitForm = (data) => {
-    dispatch(createEmployee(data));
-    console.log(data);
+    const employeeData = {
+      ...data,
+      id: generateIdUser,
+    };
+    dispatch(createEmployee(employeeData));
+    console.log("Succes a new Employee was created", employeeData);
     reset();
   };
+
+  // Lorsque que le composant modal sera importé
+  // const [displayModal, setDisplayModal] = useState(false);
 
   return (
     <form className="form" onSubmit={handleSubmit(SubmitForm)}>
