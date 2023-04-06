@@ -13,6 +13,12 @@
       margin-bottom: 10px;
     }
   }
+  .btn-wrapper {
+    display: flex;
+    .btn-primary {
+      margin: auto;
+    }
+  }
 }
 
 @media screen and (min-width: 960px) {

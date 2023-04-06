@@ -160,9 +160,11 @@ const Form = () => {
           />
         </label>
       </div>
-      <button className="btn-primary" type="submit">
-        Submit
-      </button>
+      <div className="btn-wrapper">
+        <button className="btn-primary" type="submit">
+          Submit
+        </button>
+      </div>
     </form>
   );
 };
