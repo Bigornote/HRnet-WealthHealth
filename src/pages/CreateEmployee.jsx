@@ -5,7 +5,7 @@ import Form from "../components/Form";
 const CreateEmployee = () => {
   return (
     <main className="create">
-      <div className="img-wrapper">
+      <div className="img-block">
         <img src={formImg} alt="a valid form drawing" />
       </div>
       <div className="form-wrapper">

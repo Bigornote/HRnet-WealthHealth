@@ -10,7 +10,7 @@
   background-size: auto;
   background-position: bottom;
 
-  .img-wrapper {
+  .img-block {
     max-width: 350px;
     width: 80%;
     position: relative;
@@ -26,6 +26,17 @@
     flex-direction: column;
     margin: auto;
     overflow: hidden;
+  }
+  .modal {
+    margin-top: 20px;
+    width: 80%;
+    bottom: 0px;
+    right: 0px;
+    max-width: 320px;
+
+    .close-btn {
+      top: -15px;
+    }
   }
 }
 
@@ -48,7 +59,7 @@
     background-size: 70%;
     background-position: -120% center;
 
-    .img-wrapper {
+    .img-block {
       width: 300px;
       position: absolute;
       left: 2vw;
@@ -63,9 +74,19 @@
     background-size: 50%;
     background-position: -50% center;
 
-    .img-wrapper {
+    .img-block {
       width: 350px;
       transform: translate(0%, -50%);
+    }
+
+    .modal {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+
+      .close-btn {
+        top: -15px;
+      }
     }
   }
 }
