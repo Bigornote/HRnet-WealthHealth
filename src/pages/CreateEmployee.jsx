@@ -2,6 +2,11 @@ import React from "react";
 import formImg from "../assets/form.png";
 import Form from "../components/Form";
 
+/**
+ * Importing the Form component
+ * @returns CreateEmployee component
+ */
+
 const CreateEmployee = () => {
   return (
     <main className="create">

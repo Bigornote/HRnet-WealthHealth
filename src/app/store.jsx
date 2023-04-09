@@ -11,6 +11,10 @@ import {
   REHYDRATE,
 } from "redux-persist";
 
+/**
+ * Initialization of the store, and of the persist store to keep in memory the values ​​that will be created in the store.
+ */
+
 const persistConfig = {
   key: "root",
   storage,
@@ -25,7 +29,7 @@ const persistedReducer = persistReducer(persistConfig, reducers);
 export const store = configureStore({
   reducer: persistedReducer,
 
-  // Résolution error non-serializable
+  // Resolve error non-serializable
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

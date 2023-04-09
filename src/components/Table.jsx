@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { useSelector } from "react-redux";
 
+/**
+ * Using x-data-grid from Materil Ui.
+ * Retrieving information from the store that was submitted by the form.
+ * Added an input to filter the array
+ * @returns Table component
+ */
+
 const Table = () => {
   const employee = useSelector((state) => state.employee.employees);
   const [row, setRow] = useState(employee);
@@ -47,7 +54,7 @@ const Table = () => {
       <div className="input-search-list">
         <label>
           <input
-            type="text"
+            type="search"
             placeholder="Search First Name or Last Name"
             value={filter}
             onChange={(e) => setFilter(e.target.value)}

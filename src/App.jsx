@@ -7,6 +7,11 @@ import CreateEmployee from "./pages/CreateEmployee";
 import ListEmployee from "./pages/ListEmployee";
 import Error from "./pages/Error";
 
+/**
+ * Using react-router-dom to create routes in the project
+ * @returns App component
+ */
+
 const App = () => {
   return (
     <BrowserRouter>

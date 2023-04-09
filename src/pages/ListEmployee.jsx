@@ -2,6 +2,11 @@ import React from "react";
 import Table from "../components/Table";
 import listImg from "../assets/list-employee.png";
 
+/**
+ * Importing the Table component
+ * @returns ListEmployee component
+ */
+
 const ListEmployee = () => {
   return (
     <main className="employee-list">

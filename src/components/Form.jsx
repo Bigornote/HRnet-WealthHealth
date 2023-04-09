@@ -10,6 +10,12 @@ import ComponentModalCustomAbUmd from "component-modal-custom-ab";
 import "../../node_modules/component-modal-custom-ab/dist/style.css";
 import approval from "../assets/approval.png";
 
+/**
+ * Using React Hook Form, and Yup to realize the form.
+ * Dispatch information to the store, to use them in the list.
+ * @returns Table component
+ */
+
 const Form = () => {
   const dispatch = useDispatch();
   const employee = useSelector((state) => state.employee.employees);

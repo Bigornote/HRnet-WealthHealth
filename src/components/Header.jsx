@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+/**
+ * @returns Header component
+ */
+
 const Header = () => {
   return (
     <header className="header">

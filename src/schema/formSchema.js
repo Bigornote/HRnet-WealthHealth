@@ -1,5 +1,10 @@
 import * as yup from "yup";
 
+/**
+ * Yup is a schema builder for runtime value parsing and validation
+ * @returns formSchema for use in the form
+ */
+
 const formSchema = yup.object().shape({
   firstName: yup
     .string()

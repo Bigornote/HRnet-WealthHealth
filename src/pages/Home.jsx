@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import home from "../assets/home.png";
 
+/**
+ * @returns Home component
+ */
+
 const Home = () => {
   return (
     <main className="hero">

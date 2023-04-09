@@ -7,6 +7,10 @@ import { store } from "./app/store";
 import { PersistGate } from "redux-persist/integration/react";
 import persistStore from "redux-persist/es/persistStore";
 
+/**
+ * Using PersiGate of redux-persist and Provider of redux.
+ */
+
 let persistor = persistStore(store);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
