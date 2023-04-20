@@ -11,7 +11,10 @@ const ListEmployee = () => {
   return (
     <main className="employee-list">
       <div className="img-wrapper">
-        <img src={listImg} alt="" />
+        <img
+          src={listImg}
+          alt="A man with a megaphone, looking at an employee file"
+        />
       </div>
       <div className="content-wrapper">
         <h1 className="h1">Employee List</h1>

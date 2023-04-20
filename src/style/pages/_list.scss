@@ -5,6 +5,9 @@
   min-height: calc(100vh - 150px);
   .img-wrapper {
     display: none;
+    img {
+      display: none;
+    }
   }
   .content-wrapper {
     margin-top: 150px;
@@ -24,10 +27,12 @@
     padding: 0 50px;
 
     .img-wrapper {
+      max-width: 650px;
       display: block;
       margin-top: 150px;
       width: 40%;
       img {
+        display: block;
         width: 100%;
       }
     }
